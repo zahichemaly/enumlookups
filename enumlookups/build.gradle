@@ -35,9 +35,25 @@ dependencies {
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.5.0'
-    implementation 'androidx.appcompat:appcompat:1.3.0'
-    implementation 'com.google.android.material:material:1.3.0'
-    testImplementation 'junit:junit:4.+'
+    testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 }
+
+ext {
+    PUBLISH_GROUP_ID = 'io.github.zahichemaly'
+    PUBLISH_VERSION = '1.0.0'
+    PUBLISH_ARTIFACT_ID = 'enumlookups'
+    PUBLISH_DESCRIPTION = 'Set of utility functions to get enums from their ordinal, name or any custom value defined'
+    PUBLISH_URL = 'https://github.com/zahichemaly/enumlookups'
+    PUBLISH_LICENSE_NAME = 'Apache License'
+    PUBLISH_LICENSE_URL = 'https://github.com/zahichemaly/enumlookups/blob/main/LICENSE'
+    PUBLISH_DEVELOPER_ID = 'zahichemaly'
+    PUBLISH_DEVELOPER_NAME = 'Zahi Chemaly'
+    PUBLISH_DEVELOPER_EMAIL = 'chemalyzahi@hotmail.com'
+    PUBLISH_SCM_CONNECTION = 'scm:git:github.com/zahichemaly/enumlookups.git'
+    PUBLISH_SCM_DEVELOPER_CONNECTION = 'scm:git:ssh://github.com/zahichemaly/enumlookups.git'
+    PUBLISH_SCM_URL = 'https://github.com/zahichemaly/enumlookups/tree/main'
+}
+
+apply from: "${rootProject.projectDir}/scripts/publish-module.gradle"
