@@ -13,3 +13,9 @@ Set of utility functions to get enums from their ordinal, name or any custom val
 - `MyEnum::myValue.lookupByValue(value)` returns the enum by its custom value. If no enum was found, returns the default enum defined.
 
 - `MyEnum::myValue from value` infix notation for `lookupByValue`, with default params.
+
+### How to use
+
+Include this in your build.gradle:
+
+`implementation 'io.github.zahichemaly:enumlookups:1.0.0'`
